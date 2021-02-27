@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Homework</title>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<ul class="nav-list">
+				<li class="nav-list-item"><a href="#">cart</a></li>
+				<li class="nav-list-item"><a href="#">customer information</a></li>
+				<li class="nav-list-item"><a href="#">shipping method</a></li>
+				<li class="nav-list-item"><a href="#">payment method</a></li>
+			</ul>
+		</nav>
+		<div class="product-price">
+			<ul class="price-list">
+				<li class="price-list-item">
+					<div class="wrapper">
+						<img src="./img/order.jpg" alt="chocolate bar" width="70" height="60">
+						<span>chocolate bar</span>
+					</div>
+					<span class="chocolate-price">&dollar;2.49</span>
+				</li>
+				<li class="price-list-item subtotal">
+					<div class="price-list-sub">
+						<span>subtotal</span>
+						<span>shipping</span>
+					</div>
+					<div class="price-list-price">
+						<span class="chocolate-price">&dollar;4.98</span>
+						<span class="chocolate-price">&dollar;3.00</span>
+					</div>
+				</li>
+				<li class="price-list-item total">
+					<span>total</span>
+					<span class="chocolate-price">&dollar;7.98</span>
+				</li>
+			</ul>
+		</div>
+		<form action="#">
+			<div class="payment-method">
+				<h1>payment information</h1>
+				<label>
+					<h4>card number</h4>
+					<input class="card-number" min="16" type="number" required placeholder="**** **** **** ****" name="card-number">
+				</label>
+				<div class="card-holder-info">
+					<label class="card-holder-part">
+						<h4>card holder</h4>
+						<input class="card-holder" type="text" required placeholder="Michael Jordan" name="cholder">
+					</label>
+					<div class="exp-date-section">
+						<label class="exp-date-part">
+							<h4>exp.date</h4>
+							<input class="exp-date" type="text" required placeholder="03/19" name="expiry">
+						</label>
+						<label class="cvc-part">
+							<h4>CVC</h4>
+							<input class="cvc" type="number" required placeholder="***" name="secret_code">
+						</label>	
+					</div>
+				</div>
+			</div>
+			<div class="billing-address">
+				<h1>Billing address</h1>
+				<div class="billing-to">
+					<label class="billing-border">
+						<input required class="billing" type="radio" name="bill_to"><span>Same as the shipping address</span> 
+					</label>
+					<label>
+						<input class="billing" type="radio" name="bill_to"><span>Use a different billing address</span>
+					</label>
+				</div>
+			</div>
+			<div class="order-submission">
+				<a href="#">Return to shipping method</a>
+				<input class="submitbtn" type="submit" value="Complete order">
+			</div>
+		</div>
+	</form>
+	</div>
+</body>
+</html>

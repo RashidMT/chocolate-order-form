@@ -1,0 +1,34 @@
+%ul-style {
+	margin: 0;
+	padding: 0;
+}
+
+%li-style {
+	list-style-type: none;
+	font-weight: bold;
+}
+
+%a-style {
+	text-decoration: none;
+	color: black;
+	opacity: 0.6;
+	text-transform: capitalize;
+}
+
+%capitalize {
+	text-transform: capitalize;
+}
+
+%input-style {
+	height: 30px;
+	border-radius: 3px;
+	border: 1px solid rgba(0,0,0,0.3);
+	outline: rgba(0,0,0,0.3);
+}
+
+@mixin makeBox($wsize, $hsize, $bradius, $bshadow) {
+	width: $wsize;
+	height: $hsize;
+	border-radius: $bradius;
+	box-shadow: $bshadow;
+}
